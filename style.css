@@ -1,7 +1,8 @@
-*{  
+* {
     margin: 0;
     font-family: sans-serif;
 }
+
 .header {
     display: flex;
     position: relative;
@@ -13,25 +14,34 @@
     font-size: 17px;
     box-shadow: inset -3px -7px 5px -5px grey;
 }
+
 .watchtext {
     font-size: 20px;
     padding-top: 5px;
     color: white;
 }
+
 .watchlogo {
     color: #007AFF !important;
     display: flex;
     align-items: center;
     padding-left: 50px;
 }
+
 .header ul li {
     display: inline;
     margin: 18px;
 }
-.home, .services, .aboutus {
+
+.home,
+.services,
+.aboutus {
     position: relative;
 }
-.home::after, .services::after, .aboutus::after {
+
+.home::after,
+.services::after,
+.aboutus::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -42,13 +52,18 @@
     transform-origin: top left;
     transition: all 1s linear 0s;
 }
-.home:hover::after, .services:hover::after, .aboutus:hover::after {
+
+.home:hover::after,
+.services:hover::after,
+.aboutus:hover::after {
     background-color: yellow;
     transform: scale(1);
 }
+
 .logo {
     font-size: 25px;
 }
+
 .mobile {
     background-color: black;
     color: white;
@@ -58,13 +73,21 @@
     padding-left: 60px;
     padding-top: 25px;
 }
-.mobilehome, .mobileservices, .mobileaboutus {
+
+.mobilehome,
+.mobileservices,
+.mobileaboutus {
     position: relative;
 }
-.mobileaboutus, .mobileservices {
+
+.mobileaboutus,
+.mobileservices {
     padding-top: 25px;
 }
-.mobilehome::after, .mobileservices::after, .mobileaboutus::after {
+
+.mobilehome::after,
+.mobileservices::after,
+.mobileaboutus::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -75,38 +98,50 @@
     transform-origin: top left;
     transition: all 1s linear 0s;
 }
-.mobilehome:hover::after, .mobileservices:hover::after, .mobileaboutus:hover::after {
+
+.mobilehome:hover::after,
+.mobileservices:hover::after,
+.mobileaboutus:hover::after {
     background-color: yellow;
     transform: scale(1);
 }
+
 .mobilebox {
     background-color: black;
 }
+
 #menucheck {
     display: none;
 }
-[name="menu-outline"]{
+
+[name="menu-outline"] {
     display: none;
     color: #007AFF;
 }
-[name="watch-outline"]{
+
+[name="watch-outline"] {
     color: #007AFF;
 }
+
 @media screen and (max-width:720px) {
-    [name="menu-outline"]{
+    [name="menu-outline"] {
         display: block;
     }
-    .headertext,.cartlogo{
+
+    .headertext,
+    .cartlogo {
         display: none;
     }
 }
-#menucheck:checked + .mobilebox {
+
+#menucheck:checked+.mobilebox {
     .mobile {
         display: flex;
         flex-direction: column;
         width: fit-content;
     }
 }
+
 .product-intro {
     background-color: black;
     color: white;
@@ -118,43 +153,52 @@
     position: relative;
     box-shadow: inset 0px -11px 5px -5px grey;
 }
+
 .intropic {
     width: 100%;
 }
-.product-text ul{
+
+.product-text ul {
     text-align: left;
     list-style: none;
     max-width: 720px;
     padding: 50px;
 }
+
 .column1 {
     padding: 20px;
 }
+
 @media screen and (min-width:720px) {
     .column1 {
         flex: 50%;
         max-width: 30%;
     }
+
     .column2 {
         flex: 50%;
         max-width: 50%;
     }
 }
+
 .headtext {
     font-size: 40px;
 
     padding-bottom: 10px;
 }
+
 .bodytext {
     opacity: 0.5;
     line-height: 1.3em;
     padding-bottom: 30px;
 }
+
 .price {
     padding-left: 10px;
     font-size: 25px;
     padding-bottom: 50px;
 }
+
 .buynowbtn {
     width: 90px;
     background-color: #007AFF;
@@ -164,15 +208,17 @@
     padding: 5px;
 }
 
-.banner img{
+.banner img {
     width: 100%;
 }
+
 .banner {
     position: relative;
     margin-bottom: -5px;
 }
-.bannertext ul{
-    font-size : clamp(1vw, 25px, 2.5vw);
+
+.bannertext ul {
+    font-size: clamp(1vw, 25px, 2.5vw);
     font-weight: bold;
     position: absolute;
     text-align: center;
@@ -181,10 +227,12 @@
     left: 5%;
     line-height: 1.5em;
 }
+
 .ourproduct {
     position: relative;
 }
-.ourproduct ul{
+
+.ourproduct ul {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -195,6 +243,7 @@
     list-style: none;
     background-color: black;
 }
+
 .whiteline::before {
     content: "";
     background-color: white;
@@ -204,25 +253,30 @@
     width: 50%;
     height: 1px;
 }
+
 .producthead {
     font-size: 35px;
     padding-bottom: 20px;
 }
+
 .productbody {
     opacity: 0.5;
     line-height: 1.5em;
 }
+
 .watchseries {
     padding-top: 20px;
     background-color: black;
     text-align: center;
 }
-.watchseries ul li{
+
+.watchseries ul li {
     margin: 15px;
     font-size: 25px;
     color: white;
     display: inline;
 }
+
 .watchcatalogue {
     background-color: black;
     width: 100%;
@@ -233,49 +287,61 @@
     padding-bottom: 20px;
     box-shadow: inset 0px -8px 5px -5px grey;
 }
-.watchcatalogue img{
+
+.watchcatalogue img {
     padding-top: 70px;
     width: 300px;
-} 
+}
+
 .watchrow {
     display: inline-block;
     text-align: center;
     line-height: 2em;
     color: white;
 }
+
 .watchrow p:first-of-type {
     font-size: 25px;
 }
-#firstrow, #secondrow {
+
+#firstrow,
+#secondrow {
     display: none;
     justify-content: space-evenly;
     flex-wrap: wrap;
     flex-direction: row;
 }
-#s7check:checked ~ #firstrow{
+
+#s7check:checked~#firstrow {
     display: block;
 }
-#s8check:checked ~ #secondrow{
+
+#s8check:checked~#secondrow {
     display: block;
 }
+
 .checkbtn {
     display: none;
 }
+
 .footer {
     color: white;
     background-color: black;
     text-align: center;
 }
+
 .footerheader {
     display: flex;
     justify-content: center;
     padding-top: 50px;
     font-size: 30px;
-    
+
 }
+
 [name="logo-apple"] {
     color: #007AFF;
 }
+
 .footertext {
     padding-top: 10px;
     padding-left: 50px;
@@ -283,13 +349,15 @@
     line-height: 1.5em;
     opacity: 0.5;
 }
+
 .footerlogos {
     padding: 45px;
     word-spacing: 80px;
     color: #007AFF;
     font-size: 30px;
 }
-.copyright  {
+
+.copyright {
     padding-bottom: 10px;
     opacity: 0.5;
     font-size: 20px;
