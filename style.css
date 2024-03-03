@@ -1,0 +1,113 @@
+*{  
+    margin: 0;
+    font-family: sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    box-shadow: inset -3px -7px 5px -5px grey;
+}
+.watchtext {
+    font-size: 20px;
+    padding-top: 5px;
+    color: white;
+}
+.watchlogo {
+    color: rgb(81, 81, 226) !important;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+ul li {
+    display: inline;
+    margin: 18px;
+}
+.logo {
+    font-size: 25px;
+}
+.mobile {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+#menucheck {
+    display: none;
+}
+[name="menu-outline"],.mobile{
+    display: none;
+}
+@media screen and (max-width:720px) {
+    [name="menu-outline"]{
+        display: block;
+    }
+    .headertext,.cartlogo{
+        display: none;
+    }
+    
+}
+#menucheck:checked + .mobile {
+    display: flex;
+    flex-direction: column;
+}
+.product-intro {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.product-text {
+    text-align: left;
+    list-style: none;
+    max-width: 720px;
+    padding: 50px;
+}
+.headtext {
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+.bodytext {
+    opacity: 0.5;
+    padding-bottom: 10px;
+}
+.price {
+    padding-left: 10px;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.buynowbtn {
+    width: 90px;
+    background-color: rgb(27, 131, 250);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 5px;
+}
+.intropic {
+    width: 400px;
+    max-width: 40%;
+}
+.banner img{
+    width: 100%;
+}
+.banner {
+    position: relative;
+}
+.bannertext {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    list-style: none;
+    top: 35%;
+    left: 5%;
+    line-height: 1.5em;
+}
