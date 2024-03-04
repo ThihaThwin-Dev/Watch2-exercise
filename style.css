@@ -2,7 +2,7 @@
     margin: 0;
     font-family: sans-serif;
 }
-
+/* Header */
 .header {
     display: flex;
     position: relative;
@@ -63,7 +63,7 @@
 .logo {
     font-size: 25px;
 }
-
+/* Dropdown Box */
 .mobile {
     background-color: black;
     color: white;
@@ -141,7 +141,7 @@
         width: fit-content;
     }
 }
-
+/* Watch Intro */
 .product-intro {
     background-color: black;
     color: white;
@@ -208,6 +208,7 @@
     padding: 5px;
 }
 
+/* Watch Banner */
 .banner img {
     width: 100%;
 }
@@ -228,6 +229,7 @@
     line-height: 1.5em;
 }
 
+/* Watch Checkbox Display */
 .ourproduct {
     position: relative;
 }
@@ -324,6 +326,7 @@
     display: none;
 }
 
+/* Footer */
 .footer {
     color: white;
     background-color: black;
